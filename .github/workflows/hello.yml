@@ -1,0 +1,25 @@
+name: hello # 機器人名稱
+
+on: [issues] #  事件，issues代表當有人提出issues時觸發
+
+jobs: # 任務 / 工作站
+  main:
+    runs-on: ubuntu-latest # Linux
+    # runs-on: macos-latest # MacOS
+    # runs-on: windows-latest # Windows
+
+    steps: # 步驟 / 作業程序
+      - name: print
+        # uses: # 使用 Action
+        uses: actions/github-script@v7 # actions/github-script@v7 是一個由 GitHub 官方提供、功能極為強大的「全能型腳本積木（Action）」。
+        # run: # 這是一般的指令 (直接在虛擬機執行的指令)
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '👋 哈囉！感謝你回報這個問題！'
+              })
+          
+  
