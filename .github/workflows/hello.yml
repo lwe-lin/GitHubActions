@@ -19,7 +19,7 @@ jobs: # 任務 / 工作站
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: '👋 哈囉！感謝你回報這個問題！'
+              body: '您好，我是 GitHub 機器人'
               })
           
   
