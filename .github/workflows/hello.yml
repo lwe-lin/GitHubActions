@@ -8,6 +8,10 @@ jobs: # 任務 / 工作站
     # runs-on: macos-latest # MacOS
     # runs-on: windows-latest # Windows
 
+    permissions:
+      issues: write
+      contents: read
+
     steps: # 步驟 / 作業程序
       - name: print
         # uses: # 使用 Action
