@@ -15,7 +15,7 @@ jobs: # 任務 / 工作站
     steps: # 步驟 / 作業程序
       - name: print
         # uses: # 使用 Action
-        uses: actions/github-script@v7 # actions/github-script@v7 是一個由 GitHub 官方提供、功能極為強大的「全能型腳本積木（Action）」。
+        uses: actions/github-script@v8 # actions/github-script@v7 是一個由 GitHub 官方提供、功能極為強大的「全能型腳本積木（Action）」。
         # run: # 這是一般的指令 (直接在虛擬機執行的指令)
         with:
           script: |
