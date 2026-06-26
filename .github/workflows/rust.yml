@@ -11,7 +11,7 @@ jobs:
       - name: prints
         run: echo "Hello World"
       - name: 安裝 Rust
-        run: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+        run: curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
       - name: 創建專案
         run: cargo new hello-rust && cd cd hello-rust
       - name: 執行編譯
