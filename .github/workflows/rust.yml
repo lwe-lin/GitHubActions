@@ -13,6 +13,7 @@ jobs:
           echo "Hello World"
       - name: rust
         run: |
-          cargo new hello-rust && cd hello-rust
+          cargo new hello-rust
+          cd hello-rust
           cargo check
           cargo run
