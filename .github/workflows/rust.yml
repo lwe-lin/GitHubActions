@@ -1,0 +1,12 @@
+name: rust
+
+on:
+  workflow_dispatch
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: prints
+        run: echo "Hello World"
