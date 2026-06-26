@@ -13,7 +13,6 @@ jobs:
           echo "Hello World"
       - name: rust
         run: |
-          curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
           cargo new hello-rust && cd hello-rust
           cargo check
           cargo run
