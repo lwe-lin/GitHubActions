@@ -1,0 +1,12 @@
+name: fyrox
+
+on:
+  workflow_dispatch
+
+jobs:
+  CreateProject:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 安裝Fyrox
+        run:
+          cargo install fyrox-project-manager --version=1.0.0
